@@ -53,7 +53,8 @@
 
     function getResultsPromise(table, pageNum) {
         return new Promise(function(resolve, reject) {
-            var connectionUrl = base_uri + "tv/popular?api_key=" + api_key + "&page=" + pageNum;
+//            var connectionUrl = base_uri + "tv/popular?api_key=" + api_key + "&page=" + pageNum;
+            var connectionUrl = base_uri + "tv/popular?api_key=" + api_key + "&language=en-US&sort_by=popularity.desc&page=" + pageNum;
             
             var xhr = $.ajax({
                 url: connectionUrl,
